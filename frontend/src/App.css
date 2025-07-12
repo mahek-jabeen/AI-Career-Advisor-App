@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+/* Basic styling for input section */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between inputs */
+  width: 70%; /* Adjust width as needed */
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+.input-section textarea,
+.input-section input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #61dafb; /* React blue */
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #282c34; /* Dark background */
+  color: white; /* White text */
+}
+
+.input-section textarea {
+  min-height: 100px; /* Make textareas taller */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.input-section button {
+  padding: 12px 25px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.input-section button:hover:not(:disabled) {
+  background-color: #4fa3d1;
+  transform: translateY(-2px);
+}
+
+.input-section button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #ff6347; /* Tomato red */
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.advice-section {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.advice-section h2 {
+  color: #61dafb;
+  margin-bottom: 20px;
+}
